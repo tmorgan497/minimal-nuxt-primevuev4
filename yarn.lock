@@ -5941,6 +5941,11 @@ tailwind-config-viewer@^2.0.1:
     portfinder "^1.0.26"
     replace-in-file "^6.1.0"
 
+tailwindcss-primeui@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-primeui/-/tailwindcss-primeui-0.3.1.tgz#365d53d2de65b0b1c36a6129a5e64c145e5b4ffa"
+  integrity sha512-A+uLHqdFo1jmn7qSBBDko5BXResXWfy4wKFzR/7p9P0ZENRS1xJCxKnf0E8oFRN9Joq5yjLRtMgFXfMcuPH1hg==
+
 tailwindcss@~3.4.3:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.4.tgz#351d932273e6abfa75ce7d226b5bf3a6cb257c05"

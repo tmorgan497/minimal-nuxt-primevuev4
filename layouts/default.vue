@@ -5,9 +5,9 @@
     <div class="flex h-screen">
 
         <!-- Sidebar -->
-        <div class="w-12 bg-primary-500 dark:bg-primary-800 flex justify-center pt-8">
+        <div class="w-12 flex justify-center bg-surface-500 pt-8">
             <nav>
-                <Icon name="mdi:cogs" size="30px" class="bg-[var(--primary-500)]"/>
+                <Icon name="mdi:cogs" size="30px" class="text-primary-50"/>
             </nav>
         </div>
 

@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: false,
 
   modules: [
     '@primevue/nuxt-module',
@@ -13,7 +14,17 @@ export default defineNuxtConfig({
     viewer: true,
   },
 
+  postcss: {
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {}
+    }
+  },
+
+  css: ['~/assets/css/tailwind.css'],
+
   primevue: {
+    autoImport: true,
     options: {
       unstyled: false,
       ripple: true,
