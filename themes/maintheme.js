@@ -22,20 +22,35 @@ const MyPreset = definePreset(Aura, {
     components: {
         menubar: {
             root: {
-                background: '{surface.500}',
-                color: '{surface.50}',
-                border: {
-                    color: '{surface.500}',
-                    radius: '0'
-                }
-            }
+                borderRadius: '0px',
+            },
+            colorScheme: {
+                light: {
+                    root: {
+                        background: '{primary.500}',
+                        color: '{surface.100}',
+                        border: {
+                            color: '{surface.500}',
+                        },
+                    },
+                },
+                dark: {
+                    root: {
+                        background: '{primary.800}',
+                        color: '{surface.100}',
+                        border: {
+                            color: '{surface.800}',
+                        },
+                    },
+                },
+            },
         },
         button: {
             root: {
                 borderRadius: '6px',
                 padding: {
                     x: '.25rem',
-                    y: '.125rem'
+                    y: '.125rem',
                 },
             },
             colorScheme: {
@@ -44,21 +59,21 @@ const MyPreset = definePreset(Aura, {
                         background: '{primary.500}',
                         color: '{primary.50}',
                         border: {
-                            color: '{primary.600}'
-                        }
+                            color: '{primary.700}',
+                        },
                     },
                 },
                 dark: {
                     primary: {
-                        background: '{primary.800}',
+                        background: '{primary.600}',
                         color: '{primary.100}',
                         border: {
-                            color: '{primary.900}'
-                        }
-                    }
-                }
-            }
-        }
+                            color: '{primary.300}',
+                        },
+                    },
+                },
+            },
+        },
     }
 });
 
