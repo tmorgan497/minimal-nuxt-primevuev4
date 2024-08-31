@@ -42,7 +42,9 @@ const isDarkMode = ref(false);
 
 function toggleColorScheme() {
     isDarkMode.value = !isDarkMode.value;
-    console.log(isDarkMode.value);
-    document.body.classList.toggle("p-dark");
+    const htmlElement = window?.document.querySelector('html');
+    if (htmlElement) {
+        htmlElement.classList.toggle('p-dark');
+    }
 }
 </script>
